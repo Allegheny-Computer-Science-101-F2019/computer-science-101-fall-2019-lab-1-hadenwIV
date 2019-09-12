@@ -142,7 +142,7 @@ public class CreditCard {
       wallet[1].charge(2 * val);
       wallet[2].charge(val);
     }
-
+a
     // TODO: Add in the required for loop
     for (CreditCard card : wallet) {
      CreditCard.printSummary(card); // calling static method
