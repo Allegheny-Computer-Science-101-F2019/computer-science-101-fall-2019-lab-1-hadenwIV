@@ -24,7 +24,7 @@
 package labone;
 
 /**
- * A simple model for a consumer credit card.
+ *  simple model for a consumer credit card.
  *
  * @author Michael T. Goodrich
  * @author Roberto Tamassia
