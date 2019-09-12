@@ -48,6 +48,11 @@ public class CreditCard {
    */
   public CreditCard(String cust, String bk, String acnt, int lim, double initialBal) {
     // TODO: Add the implementation of this constructor
+    customer = cust;
+    bank = bk;
+    account = acnt;
+    limit = lim;
+    balance = initialBal;
   }
 
   /**
@@ -94,6 +99,7 @@ public class CreditCard {
    */
   public boolean charge(double price) {
     // TODO: Add an implementation of this method
+    if (price + balance > limit)
     return false;
   }
 
@@ -103,6 +109,7 @@ public class CreditCard {
    */
   public void makePayment(double amount) {
     // TODO: Add an implementation of this method
+    balance −= amount;
   }
 
   /**
@@ -111,6 +118,11 @@ public class CreditCard {
    */
   public static void printSummary(CreditCard card) {
     // TODO: Add an implementation of this method
+    System.out.println("Customer = " + card.customer);
+    System.out.println("Bank = " + card.bank);
+    System.out.println("Account = " + card.account);
+    System.out.println("Balance = " + card.balance);
+    System.out.println("Limit = " + card.limit);
   }
 
   /**
@@ -132,6 +144,10 @@ public class CreditCard {
     }
 
     // TODO: Add in the required for loop
-
+    for (CreditCard card : wallet) {
+     CreditCard.printSummary(card); // calling static method
+     while (card.getBalance( ) > 200.0) {
+    card.makePayment(200);
+    System.out.println("New balance = " + card.getBalance( ));
   }
 }
