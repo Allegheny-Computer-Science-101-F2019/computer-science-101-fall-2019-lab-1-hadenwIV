@@ -39,7 +39,7 @@ public class CreditCard {
   protected double balance;     // current balance (measured in dollars)
 
   /**
-   * Constructs a new credit card instance.
+   * Constructs  new credit card instance.
    * @param cust        the name of the customer (e.g., "John Bowman")
    * @param bk          the name of the bank (e.g., "California Savings")
    * @param acnt        the account identifier (e.g., "5391 0375 9387 5309")
