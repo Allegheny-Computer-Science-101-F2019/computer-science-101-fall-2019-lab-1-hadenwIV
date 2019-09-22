@@ -69,7 +69,7 @@ public class CreditCard {
 
   /** Returns the name of the customer. */
   public String getCustomer() {
-    return customer;
+      return customer;
   }
 
   /** Returns the name of the bank. */
@@ -100,7 +100,11 @@ public class CreditCard {
   public boolean charge(double price) {
     // TODO: Add an implementation of this method
     if (price + balance > limit)
-    return false;
+      return false;
+
+  // at this point, the charge is successful
+    balance += price; // update the balance
+    return true; // announce the good news
   }
 
   /**
@@ -109,7 +113,7 @@ public class CreditCard {
    */
   public void makePayment(double amount) {
     // TODO: Add an implementation of this method
-    balance −= amount;
+    balance -= amount;
   }
 
   /**
@@ -123,7 +127,8 @@ public class CreditCard {
     System.out.println("Account = " + card.account);
     System.out.println("Balance = " + card.balance);
     System.out.println("Limit = " + card.limit);
-  }
+    }
+
 
   /**
    * Create, display, and manipulate credit cards.
@@ -149,5 +154,7 @@ public class CreditCard {
      while (card.getBalance( ) > 200.0) {
     card.makePayment(200);
     System.out.println("New balance = " + card.getBalance( ));
+      }
+    }
   }
 }
