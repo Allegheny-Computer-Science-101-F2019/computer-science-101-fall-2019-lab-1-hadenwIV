@@ -99,9 +99,9 @@ public class CreditCard {
    */
   public boolean charge(double price) {
     // TODO: Add an implementation of this method
-    if (price + balance > limit)
+    if (price + balance > limit) {
       return false;
-
+    }
     // at this point, the charge is successful
     balance += price; // update the balance
     return true; // announce the good news
