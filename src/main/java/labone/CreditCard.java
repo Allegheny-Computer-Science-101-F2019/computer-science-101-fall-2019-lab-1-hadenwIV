@@ -69,7 +69,7 @@ public class CreditCard {
 
   /** Returns the name of the customer. */
   public String getCustomer() {
-      return customer;
+    return customer;
   }
 
   /** Returns the name of the bank. */
@@ -102,7 +102,7 @@ public class CreditCard {
     if (price + balance > limit)
       return false;
 
-  // at this point, the charge is successful
+    // at this point, the charge is successful
     balance += price; // update the balance
     return true; // announce the good news
   }
@@ -127,7 +127,7 @@ public class CreditCard {
     System.out.println("Account = " + card.account);
     System.out.println("Balance = " + card.balance);
     System.out.println("Limit = " + card.limit);
-    }
+  }
 
 
   /**
@@ -150,10 +150,10 @@ public class CreditCard {
 
     // TODO: Add in the required for loop
     for (CreditCard card : wallet) {
-     CreditCard.printSummary(card); // calling static method
-     while (card.getBalance( ) > 200.0) {
-    card.makePayment(200);
-    System.out.println("New balance = " + card.getBalance( ));
+      CreditCard.printSummary(card); // calling static method
+      while (card.getBalance( ) > 200.0) {
+        card.makePayment(200);
+        System.out.println("New balance = " + card.getBalance( ));
       }
     }
   }
