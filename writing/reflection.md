@@ -103,9 +103,11 @@ forced to face it when I was running out of time to actually finish the project.
 
 ## After completing this assignment, what is one experience for which you are grateful?
 
-I am grateful to get this lab completed, because I was really confused the whole
-time working on the assignment that I prolonged actually completing the
-assignment up until the last minute so that I could still get a grade for it.
+I am grateful to get this lab completed, because I was confused the whole
+time working on the assignment since I knew how to do variance and that was
+needed to find standard deviation through code . I  procrastinated throughout the
+week since it was declaring the sum of all variables in the array then squaring
+them that became a real problem since I didn't how to square factors within java. 
 That being said, I am also grateful for my colleagues (Chaz Montgomery and Andrew
 Rankins-Bell) helping me through the process and for the another fellow classmate
 who briefly explained to me what a fenced code block was and how to implement it
